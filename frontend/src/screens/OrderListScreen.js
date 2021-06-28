@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { LinkContainer } from 'react-router-bootstrap';
-import { Table, Button } from 'react-bootstrap';
+import { Table } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import Message from '../components/Message';
 import Loader from '../components/Loader';
@@ -75,7 +75,7 @@ const OrderListScreen = ({ history }) => {
                     className='d-block text-center'
                     to={`/order/${order._id}`}
                   >
-                    <a>Details</a>
+                    <p>Details</p>
                   </LinkContainer>
                 </td>
               </tr>
