@@ -20,13 +20,6 @@ h2 {
   margin: 0.1rem;
 }
 
-.link-text {
-  display: block;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: underline;
-}
-
 /* carousel */
 .carousel-item-next,
 .carousel-item-prev,

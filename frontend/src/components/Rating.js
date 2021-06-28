@@ -1,5 +1,4 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from 'react'
 
 const Rating = ({ value, text, color }) => {
   return (
@@ -66,13 +65,11 @@ const Rating = ({ value, text, color }) => {
       </span>
       <span>{text && text}</span>
     </div>
-  );
-};
+  )
+}
 
 Rating.defaultProps = {
-  value: 0,
-  text: '0 reviews',
   color: '#f8e825',
-};
+}
 
-export default Rating;
+export default Rating

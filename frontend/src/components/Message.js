@@ -9,8 +9,8 @@ const Message = ({ variant, children }) => {
       {showAlert && (
         <Alert
           variant={variant}
-          dismissible
           onClose={() => setShowAlert(false)}
+          dismissible
         >
           {children}
         </Alert>

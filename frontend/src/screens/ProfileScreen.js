@@ -136,37 +136,29 @@ const ProfileScreen = ({ location, history }) => {
                   <td>{order._id}</td>
                   <td>{order.createdAt.substring(0, 10)}</td>
                   <td>{order.totalPrice}</td>
-                  <td>
+                  <td className='align-middle'>
                     {order.isPaid ? (
                       order.paidAt.substring(0, 10)
                     ) : (
                       <i
-                        className='fas fa-times'
-                        style={{
-                          color: 'red',
-                          display: 'block',
-                          textAlign: 'center',
-                        }}
+                        className='fas fa-times d-block text-center'
+                        style={{ color: 'red' }}
                       ></i>
                     )}
                   </td>
-                  <td>
+                  <td className='align-middle'>
                     {order.isDelivered ? (
                       order.deliveredAt.substring(0, 10)
                     ) : (
                       <i
-                        className='fas fa-times'
-                        style={{
-                          color: 'red',
-                          display: 'block',
-                          textAlign: 'center',
-                        }}
+                        className='fas fa-times d-block text-center'
+                        style={{ color: 'red' }}
                       ></i>
                     )}
                   </td>
                   <td>
                     <LinkContainer to={`/order/${order._id}`}>
-                      <span className='link-text'>Details</span>
+                      <a>Details</a>
                     </LinkContainer>
                   </td>
                 </tr>
