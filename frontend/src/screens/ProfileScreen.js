@@ -158,7 +158,9 @@ const ProfileScreen = ({ location, history }) => {
                   </td>
                   <td>
                     <LinkContainer to={`/order/${order._id}`}>
-                      <p>Details</p>
+                      <a href='#' className='d-block text-center'>
+                        Details
+                      </a>
                     </LinkContainer>
                   </td>
                 </tr>

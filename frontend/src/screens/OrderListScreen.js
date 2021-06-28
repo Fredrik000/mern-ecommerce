@@ -75,7 +75,9 @@ const OrderListScreen = ({ history }) => {
                     className='d-block text-center'
                     to={`/order/${order._id}`}
                   >
-                    <p>Details</p>
+                    <a href='#' className='d-block text-center'>
+                      Details
+                    </a>
                   </LinkContainer>
                 </td>
               </tr>

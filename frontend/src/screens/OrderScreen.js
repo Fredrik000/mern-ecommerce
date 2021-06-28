@@ -155,7 +155,7 @@ const OrderScreen = ({ match, history }) => {
                           </Link>
                         </Col>
                         <Col md={4}>
-                          {item.qty} x ${item.price} = ${item.qty * item.price}
+                          {item.qty} x ${item.price}
                         </Col>
                       </Row>
                     </ListGroup.Item>
@@ -191,8 +191,12 @@ const OrderScreen = ({ match, history }) => {
               </ListGroup.Item>
               <ListGroup.Item>
                 <Row>
-                  <Col>Total</Col>
-                  <Col>${order.totalPrice}</Col>
+                  <Col>
+                    <p className='h5'>Total</p>
+                  </Col>
+                  <Col>
+                    <p className='h5'>${order.totalPrice}</p>
+                  </Col>
                 </Row>
               </ListGroup.Item>
               {!order.isPaid && (
